@@ -1,0 +1,16 @@
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\DocOrganizer.Tests.dll
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\DocOrganizer.Tests.pdb
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\DocOrganizer.exe
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\DocOrganizer.pdb
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\DocOrganizer.exe.config
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\obj\Debug\DocOrganizer.Tests.csprojResolveAssemblyReference.cache
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\obj\Debug\DocOrganizer.Tests.csproj.CoreCompileInputs.cache
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\obj\Debug\DocOrganizer.Tests.dll
+C:\Users\vjrkhrystynych\workspace\tests\Personal\DocOrganizer\DocOrganizer.Tests\obj\Debug\DocOrganizer.Tests.pdb
