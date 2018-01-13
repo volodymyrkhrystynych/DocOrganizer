@@ -35,6 +35,7 @@ namespace DocOrganizer
         Math,
         Language,
         Programming,
+        Statistics
 
     }
 

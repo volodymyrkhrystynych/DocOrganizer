@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Drawing;
+using Aspose.Pdf;
 
 namespace DocOrganizer
 {
@@ -11,7 +13,7 @@ namespace DocOrganizer
     {
         public string sourceFile;
         public string sourcePath;
-        private string extension;
+        public string extension;
 
         public DocInfo(string imagepath)
         {
@@ -91,12 +93,44 @@ namespace DocOrganizer
 
         public string MonthPath()
         {
-            return Path.Combine(TargetDirectory, Day.Year.ToString(), Day.Month.ToString());
+            if (Day.Month < 10)
+            {
+                return Path.Combine(YearPath(), "0" + Day.Month.ToString());
+            }
+            else
+            {
+                return Path.Combine(YearPath(), Day.Month.ToString());
+            }
         }
 
         public string DayPath()
         {
-            return Path.Combine(TargetDirectory, Day.Year.ToString(), Day.Month.ToString(), Day.Day.ToString());
+            if (Day.Day < 10)
+            {
+                return Path.Combine(MonthPath(), "0" + Day.Day.ToString());
+            }
+            else
+            {
+                return Path.Combine(MonthPath(), Day.Day.ToString());
+            }
+        }
+
+        public string pdfConverter()
+        {
+            string dirpath = Path.Combine(sourcePath, "Temp");
+            string filepath = Path.Combine(dirpath, "Temp.jpeg");
+
+            if (!Directory.Exists(dirpath))
+            {
+                Directory.CreateDirectory(dirpath);
+            }
+
+            Aspose.Pdf.License licpdf = new Aspose.Pdf.License();
+            Aspose.Pdf.Devices.JpegDevice dev = new Aspose.Pdf.Devices.JpegDevice();
+            Document pdfdoc = new Aspose.Pdf.Document(sourceFile);
+            dev.Process(pdfdoc.Pages[1], filepath);
+
+            return filepath;
         }
 
         public string CreatePath()

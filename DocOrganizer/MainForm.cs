@@ -1,4 +1,7 @@
-﻿using System;
+﻿using PdfSharp.Drawing;
+using PdfSharp.Pdf;
+using PdfSharp.Pdf.IO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Aspose.Pdf;
 
 namespace DocOrganizer
 {
@@ -35,7 +39,7 @@ namespace DocOrganizer
         {
             List<string> result = new List<string>();
 
-            string[] ImageExtentions = new string[] { ".bmp", ".emf", ".exif", ".gif", ".icon", ".jpeg", ".png", ".tiff", ".wmf", ".jpg" };
+            string[] ImageExtentions = new string[] { ".bmp", ".emf", ".exif", ".gif", ".icon", ".jpeg", ".png", ".tiff", ".wmf", ".jpg", ".pdf" };
 
             string[] temp = Directory.GetFiles(path);
 
@@ -100,8 +104,16 @@ namespace DocOrganizer
                 MyImage.Dispose();
             }
             pictureBoxDoc.SizeMode = PictureBoxSizeMode.StretchImage;
-            MyImage = new Bitmap(info.sourceFile);;
-            pictureBoxDoc.Image = (Image)MyImage;
+
+            if ((info.extension == ".pdf"))
+            {
+                MyImage = new Bitmap(info.pdfConverter());
+            }
+            else
+            {
+                MyImage = new Bitmap(info.sourceFile);;
+            }
+            pictureBoxDoc.Image = (System.Drawing.Image)MyImage;
         }
 
         private void buttonNext_Click(object sender, EventArgs e)
